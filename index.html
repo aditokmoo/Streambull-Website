@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Streambull</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -12,11 +12,11 @@
     <nav>
         <div class="navigation">
             <div class="container">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Pricing</a></li>
+                <ul id="list-items">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
@@ -47,7 +47,7 @@
 
     <!-- About Section -->
     <div class="bg-wrapper">
-        <section>
+        <section id="about">
             <div class="about-section">
                 <div class="container">
                     <div class="about-section-wrapper">
@@ -77,17 +77,17 @@
         </section>
 
         <!-- Screenshots Section-->
-        <section>
+        <section id="features">
             <div class="feat-section">
                 <div class="container">
                     <div class="feat-section-wrapper">
                         <h1>Streambull</h1>
                         <h4>This Screenshots represents Streambull Application UX Design</h4>
                         <div class="feat-screens">
-                            <img src="images/header-img-1.png" alt="">
-                            <img src="images/header-img-2.png" alt="">
-                            <img src="images/header-img-1.png" alt="">
-                            <img src="images/header-img-2.png" alt="">
+                            <img src="images/header-img-3.png" id="first-row" alt="">
+                            <img src="images/header-img-4.png" alt="">
+                            <img src="images/header-img-4.png" id="first-row" alt="">
+                            <img src="images/header-img-3.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
     </div>
 
     <!-- Testimonials -->
-    <section>
+    <section id="testimonials">
         <div class="test-section">
             <div class="container">
                 <div class="test-section-wrapper">
@@ -114,7 +114,7 @@
                         </div>
                         <div class="box">
                             <img src="images/profile-img.png" alt="">
-                            <h4>Irfan Krivokapa</h4>
+                            <h4>Robert Smith</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales molestie eleifend. Vivamus vel finibus adio. Cras eu sollicitudin eros.</p>
                         </div>
                         <div class="box">
@@ -128,7 +128,8 @@
             </div>
         </div>
     </section>
-    <section>
+
+    <section id="pricing">
         <div class="pricing-section">
             <div class="container">
                 <div class="pricing-section-wrapper">
@@ -182,6 +183,7 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
     <section>
         <div class="footer-section">
             <div class="container">

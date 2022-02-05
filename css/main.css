@@ -39,6 +39,10 @@ nav .navigation ul li a {
     text-transform: uppercase;
     padding: 25px 15px;
 }
+
+nav .navigation .menu-bar{
+    display: none;
+}
 /* END */
 
 /* Header */
@@ -47,7 +51,7 @@ header .header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 92.5vh; 
+    height: 100vh; 
     color: #fff;
 }
 
@@ -157,12 +161,10 @@ section .feat-section .feat-section-wrapper .feat-screens {
 }
 
 section .feat-section .feat-section-wrapper .feat-screens img {
-    width: 430px;
+    width: 220px;
     position: relative;
     top: 40px;
-    left: 6%;
-    right: 6%;
-    margin-left: -150px;
+    margin: 0 10px;
 }
 
 /* Testimonials Section */
@@ -289,8 +291,8 @@ section .pricing-section .pricing-section-wrapper .boxes .box {
     padding: 50px 0 80px 0;
     text-align: center;
     -webkit-box-shadow: 0px 0px 23px -15px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 23px -15px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 23px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px -15px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px -15px rgba(0,0,0,0.75);
 }
 
 section .pricing-section .pricing-section-wrapper .boxes .box h1 {
@@ -333,8 +335,8 @@ section .pricing-section .pricing-section-wrapper .boxes .box a {
 section .pricing-section .pricing-section-wrapper .boxes .box a:hover{
     background: #075DB2;
     -webkit-box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
 }
 
 
@@ -383,12 +385,6 @@ section .footer-section .footer-section-wrapper .icons .icon {
     text-align: left;
     display: flex;
 }
-
-
-
-
-
-
 /* ========================================================== */
 
 /* Mobile View - Media Queries */
@@ -400,13 +396,13 @@ section .footer-section .footer-section-wrapper .icons .icon {
     section .pricing-section .pricing-section-wrapper .boxes {
       display: block;
     }
-
     /* Navigation */
-    nav .navigation ul li a {display: none;}
-
+    nav .navigation ul li a {
+        display: none;
+    }
     /* Header */
     header .section-wrapper .section #header-img {display: none}
-    header .header {padding: 0 20px;}
+    header .header {padding: 40px 25px}
     header .header .section-wrapper {top: 2.5vh;}
     header .header .section-wrapper .section {
         text-align: center;
@@ -433,7 +429,7 @@ section .footer-section .footer-section-wrapper .icons .icon {
     
     /* Screenshots */
     section .feat-section .feat-section-wrapper .feat-screens img {
-        width: 100%;
+        width: 50%;
         top: 40px;
         left: 0;
         right: 6%;
@@ -470,3 +466,95 @@ section .footer-section .footer-section-wrapper .icons .icon {
         grid-gap: 3em;
     }
   }
+/* ========================================================== */
+
+/* Tablet View - Media Queries */
+@media only screen and (min-width: 601px) and (max-width: 1366px){
+    
+
+    /* Navigation */
+    nav .navigation ul {text-align: center;}
+
+    /* Header */
+    header .header .section-wrapper {
+        margin: 0 70px;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    header .header .section-wrapper .section h3{
+        font-size: 1.2em;
+        margin: 0 10px;
+    }
+
+    header .header .section-wrapper .section h1{
+        font-size: 3.5em;
+    }
+
+    header .header .section-wrapper .section p{
+        font-size: 1.2em;
+    }
+
+    header .header .section-wrapper .section .btn a {
+        margin: 10px;
+    }
+
+    header .header .section-wrapper .section #header-img {display: none;}
+
+    /* About Section */
+    section .about-section .about-section-wrapper {
+        grid-gap: 0;
+    }
+
+    /* Testimonials */ 
+    section .test-section .test-section-wrapper .boxes {
+        margin: 0 30px;
+    }
+
+    /* Screenshots section */
+    section .feat-section .feat-section-wrapper .feat-screens {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    section .feat-section .feat-section-wrapper .feat-screens img {
+        margin: 0;
+        position: relative;
+    }
+
+    section .feat-section .feat-section-wrapper .feat-screens #first-row {justify-self: end}
+
+    /* Price section */
+    section .pricing-section .pricing-section-wrapper {
+        padding: 0 100px;
+    }
+
+    section .pricing-section .pricing-section-wrapper .header {
+        padding-top: 50px;
+    }
+
+    section .pricing-section .pricing-section-wrapper .boxes{
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    section .pricing-section .pricing-section-wrapper .boxes .box{
+        margin-bottom: 30px;
+    }
+
+    /* Footer Section */
+    section .footer-section .footer-section-wrapper {
+        padding: 50px 16px;
+    }
+    
+    section .footer-section .footer-section-wrapper .icons {
+        font-size: 12px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3em;
+    }
+}
